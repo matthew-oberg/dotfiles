@@ -1,0 +1,6 @@
+alias ls='ls -F --color=auto'
+alias ll='ls -Flha --color=auto'
+alias la='ls -Fa --color=auto'
+
+alias reboot='sudo reboot'
+alias shutdown='sudo shutdown now'
