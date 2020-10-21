@@ -2,8 +2,8 @@ alias ls='ls -F --color=auto'
 alias ll='ls -Flha --color=auto'
 alias la='ls -Fa --color=auto'
 
-alias reboot='sudo reboot'
-alias shutdown='sudo shutdown now'
+alias rb='sudo reboot'
+alias sd='sudo shutdown now'
 
 alias gi='git init'
 alias gs='git status'
@@ -12,3 +12,10 @@ alias ga='git add'
 alias gps='git push'
 alias gpl='git pull'
 alias gcl='git clone'
+
+alias pm='sudo pacman'
+
+alias sctl='sudo systemctl'
+
+alias bt='bashtop'
+alias ht='htop'
