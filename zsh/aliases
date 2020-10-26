@@ -19,3 +19,5 @@ alias sctl='sudo systemctl'
 
 alias bt='bashtop'
 alias ht='htop'
+
+alias gpg='gpg2'
