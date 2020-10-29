@@ -8,8 +8,6 @@ autoload -Uz compinit; compinit
 
 bindkey -v
 
-source /usr/share/doc/find-the-command/ftc.zsh
-
 source $ZDOTDIR/aliases
 source $ZDOTDIR/local-aliases
 
