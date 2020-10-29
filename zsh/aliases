@@ -21,3 +21,5 @@ alias bt='bashtop'
 alias ht='htop'
 
 alias gpg='gpg2'
+
+alias nctl='sudo netctl'
