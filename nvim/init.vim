@@ -26,8 +26,6 @@ nmap Q <Nop>
 
 set noerrorbells visualbell t_vb=
 
-command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-
 set noshowmode
 
 filetype plugin on
