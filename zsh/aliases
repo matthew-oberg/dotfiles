@@ -16,6 +16,7 @@ alias gcl='git clone'
 alias pm='sudo pacman'
 
 alias sctl='sudo systemctl'
+alias jctl='sudo journalctl
 
 alias bt='bashtop'
 alias ht='htop'
