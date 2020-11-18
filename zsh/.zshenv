@@ -12,6 +12,10 @@ export VISUAL="nvim"
 
 export PATH="${PATH}:/home/matthew/bin"
 
+export QT_AUTO_SCREEN_SET_FACTOR=0
+export QT_SCALE_FACTOR=1.5
+export QT_FONT_DPI=96
+
 export RANGER_LOAD_DEFAULT_RC='FALSE'
 
 export LC_ALL=en_US.UTF-8
