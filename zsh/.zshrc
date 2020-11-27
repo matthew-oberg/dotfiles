@@ -13,6 +13,8 @@ source $ZDOTDIR/local-aliases
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+eval $(thefuck --alias)
+
 [[ $- != *i* ]] && return
 
 cursor_mode() {
