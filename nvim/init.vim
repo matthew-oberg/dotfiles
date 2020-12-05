@@ -37,18 +37,19 @@ let g:ale_sign_column_always = 1
 
 call plug#begin('~/.nvim/plugged')
 
+    Plug 'joshdick/onedark.vim'
     Plug 'itchyny/lightline.vim'
-    Plug 'ycm-core/YouCompleteMe'
+    Plug 'valloric/youcompleteme'
     Plug 'rust-lang/rust.vim'
     Plug 'preservim/nerdtree'
     Plug 'tpope/vim-surround'
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-fugitive'
     Plug 'dense-analysis/ale'
-    Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
-colorscheme nord
+let g:onedark_termcolors=256
+colorscheme onedark
 
-let g:lightline = {'colorscheme': 'nord'}
+let g:lightline = {'colorscheme': 'onedark'}
