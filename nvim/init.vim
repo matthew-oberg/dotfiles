@@ -31,7 +31,22 @@ set noshowmode
 filetype plugin on
 filetype plugin indent on
 
-map <C-n> :NERDTreeToggle<CR>
+map <F1> :NERDTreeToggle<CR>
+
+map <F2> :GitGutterSignsToggle<CR>
+map <F3> :GitGutterLineHighlightsToggle<CR>
+
+nmap <F4> <Plug>(openbrowser-smart-search)
+vmap <F5> <Plug>(openbrowser-smart-search)
+
+nnoremap <silent><Leader>n :RangerOpenCurrentFile<CR>
+nnoremap <silent><Leader>c :RangerOpenCurrentDir<CR>
+nnoremap <silent><Leader>f :RangerOpenProjectRootDir<CR>
+
+nnoremap <F12> :buffers<CR>:buffer<Space>
+
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 
 let g:ale_sign_column_always = 1
 
@@ -46,6 +61,14 @@ call plug#begin('~/.nvim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-fugitive'
     Plug 'dense-analysis/ale'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'junegunn/fzf'
+    Plug 'tpope/vim-eunuch'
+    Plug 'mattn/emmet-vim'
+    Plug 'mg979/vim-visual-multi'
+    Plug 'tyru/open-browser.vim'
+    Plug 'rbgrouleff/bclose.vim'
+    Plug 'iberianpig/ranger-explorer.vim'
 
 call plug#end()
 
