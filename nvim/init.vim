@@ -2,8 +2,7 @@ set nocompatible
 
 syntax on
 
-set number
-set relativenumber
+set number relativenumber
 
 set ignorecase
 set smartcase
@@ -31,7 +30,7 @@ set noshowmode
 filetype plugin on
 filetype plugin indent on
 
-map <F1> :NERDTreeToggle<CR>
+map <F1> :RangerOpenCurrentFile<CR>
 
 map <F2> :GitGutterSignsToggle<CR>
 map <F3> :GitGutterLineHighlightsToggle<CR>
@@ -42,6 +41,8 @@ vmap <F5> <Plug>(openbrowser-smart-search)
 nnoremap <silent><Leader>n :RangerOpenCurrentFile<CR>
 nnoremap <silent><Leader>c :RangerOpenCurrentDir<CR>
 nnoremap <silent><Leader>f :RangerOpenProjectRootDir<CR>
+
+map <F11> :set rnu!<CR>
 
 nnoremap <F12> :buffers<CR>:buffer<Space>
 
@@ -56,7 +57,6 @@ call plug#begin('~/.nvim/plugged')
     Plug 'itchyny/lightline.vim'
     Plug 'valloric/youcompleteme'
     Plug 'rust-lang/rust.vim'
-    Plug 'preservim/nerdtree'
     Plug 'tpope/vim-surround'
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-fugitive'
@@ -69,6 +69,7 @@ call plug#begin('~/.nvim/plugged')
     Plug 'tyru/open-browser.vim'
     Plug 'rbgrouleff/bclose.vim'
     Plug 'iberianpig/ranger-explorer.vim'
+    Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
