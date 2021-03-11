@@ -1,5 +1,3 @@
-set nocompatible
-
 syntax on
 
 set number relativenumber
@@ -8,11 +6,15 @@ set ignorecase
 set smartcase
 
 set incsearch
-set hlsearch
+set nohlsearch
 
 set magic
 
 set showmatch
+
+set nowrap
+
+set nocompatible
 
 set expandtab
 set smarttab
@@ -21,27 +23,28 @@ set tabstop=4
 set ai
 set si
 
+set scrolloff=5
+
 set noerrorbells visualbell t_vb=
 
 set noshowmode
 
+filetype on
 filetype plugin on
 filetype plugin indent on
 
 nmap Q <Nop>
 
+let mapleader = ","
+
 map <F1> :RangerOpenCurrentFile<CR>
 
 map <F2> :GitGutterSignsToggle<CR>
-map <F3> :GitGutterLineHighlightsToggle<CR>
 
 nmap <F4> <Plug>(openbrowser-smart-search)
-vmap <F5> <Plug>(openbrowser-smart-search)
 
-nnoremap <silent><Leader>n :RangerOpenCurrentFile<CR>
-nnoremap <silent><Leader>c :RangerOpenCurrentDir<CR>
-nnoremap <silent><Leader>f :RangerOpenProjectRootDir<CR>
-
+map <F9> :set scl=yes<CR>
+map <F10> :set nu! <bar> :set rnu! <bar> :set scl=no<CR>
 map <F11> :set rnu!<CR>
 
 nnoremap <F12> :buffers<CR>:buffer<Space>
@@ -49,14 +52,12 @@ nnoremap <F12> :buffers<CR>:buffer<Space>
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
-let g:ale_sign_column_always = 1
-
 call plug#begin('~/.nvim/plugged')
 
     Plug 'joshdick/onedark.vim'
     Plug 'itchyny/lightline.vim'
     Plug 'tpope/vim-surround'
-    Plug 'preservim/nerdcommenter'
+    Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-fugitive'
     Plug 'dense-analysis/ale'
     Plug 'airblade/vim-gitgutter'
@@ -68,6 +69,23 @@ call plug#begin('~/.nvim/plugged')
     Plug 'ycm-core/YouCompleteMe'
     Plug 'maximbaz/lightline-ale'
     Plug 'vim-scripts/ShowTrailingWhitespace'
+
+    Plug 'vim-jp/vim-cpp'
+    Plug 'pboettch/vim-cmake-syntax'
+    Plug 'tfnico/vim-gradle'
+    Plug 'othree/html5.vim'
+    Plug 'pangloss/vim-javascript'
+    Plug 'leshill/vim-json'
+    Plug 'dzeban/vim-log-syntax'
+    Plug 'tbastos/vim-lua'
+    Plug 'chr4/nginx.vim'
+    Plug 'vim-perl/vim-perl'
+    Plug 'stanangeloff/php.vim'
+    Plug 'vim-python/python-syntax'
+    Plug 'rust-lang/rust.vim'
+    Plug 'arzg/vim-sh'
+    Plug 'matt-deacalion/vim-systemd-syntax'
+    Plug 'hail2u/vim-css3-syntax'
 
 call plug#end()
 
